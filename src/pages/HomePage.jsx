@@ -30,8 +30,7 @@ const HomePage = () => {
       <HomeDiv className="m-0">
         <Carousel className="slider">
           <Carousel.Item className="img-h position-relative">
-            <img className="d-block " src={hero1} alt="First slide" />
-            {/* <Container> */}
+            <img className="d-block" src={hero1} alt="First slide" />
             <Carousel.Caption className="po-cap col-6 col-sm-6  ">
               <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8 text-start">
                 <h2 class="title">
@@ -52,59 +51,53 @@ const HomePage = () => {
                 </a>
               </div>
             </Carousel.Caption>
-            {/* </Container> */}
-          </Carousel.Item>
-          {/* <Carousel.Item className="img-h position-relative">
-            <img className="d-block w-100" src={hero2} alt="Second slide" />
-
-            <Container>
-              <Carousel.Caption className="po-cap col-5">
-                <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8 text-start">
-                  <h2 class="title">
-                    Designing awesome brands &amp; experiences
-                  </h2>
-                  <div class="desc">
-                    <p>
-                      We are an agency located in New York. We think strategy,
-                      craft design, develop digital and create motion. To
-                      forward your brand and business.
-                    </p>
-                  </div>
-                  <a href="/">
-                    <button className="carosel-btn-1">Get Started</button>
-                  </a>
-                  <a href="/">
-                    <button className="carosel-btn-2"> Learn More </button>
-                  </a>
-                </div>
-              </Carousel.Caption>
-            </Container>
           </Carousel.Item>
           <Carousel.Item className="img-h position-relative">
-            <img className="d-block w-100" src={hero3} alt="Third slide" />
-            <Container>
-              <Carousel.Caption className="po-cap col-5">
-                <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8 text-start">
-                  <h2 class="title">
-                    Designing awesome brands &amp; experiences
-                  </h2>
-                  <div class="desc">
-                    <p>
-                      We are an agency located in New York. We think strategy,
-                      craft design, develop digital and create motion. To
-                      forward your brand and business.
-                    </p>
-                  </div>
-                  <a href="/">
-                    <button className="carosel-btn-1">Get Started</button>
-                  </a>
-                  <a href="/">
-                    <button className="carosel-btn-2"> Learn More </button>
-                  </a>
+            <img className="d-block" src={hero2} alt="Second slide" />
+            <Carousel.Caption className="po-cap col-6 col-sm-6  ">
+              <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8 text-start">
+                <h2 class="title">
+                  Designing awesome brands &amp; experiences
+                </h2>
+                <div class="desc">
+                  <p>
+                    We are an agency located in New York. We think strategy,
+                    craft design, develop digital and create motion. To forward
+                    your brand and business.
+                  </p>
                 </div>
-              </Carousel.Caption>
-            </Container>
-          </Carousel.Item> */}
+                <a href="/">
+                  <button className="carosel-btn-1">Get Started</button>
+                </a>
+                <a href="/">
+                  <button className="carosel-btn-2"> Learn More </button>
+                </a>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item className="img-h position-relative">
+            <img className="d-block" src={hero3} alt="Third slide" />
+            <Carousel.Caption className="po-cap col-6 col-sm-6  ">
+              <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8 text-start">
+                <h2 class="title">
+                  Designing awesome brands &amp; experiences
+                </h2>
+                <div class="desc">
+                  <p>
+                    We are an agency located in New York. We think strategy,
+                    craft design, develop digital and create motion. To forward
+                    your brand and business.
+                  </p>
+                </div>
+                <a href="/">
+                  <button className="carosel-btn-1">Get Started</button>
+                </a>
+                <a href="/">
+                  <button className="carosel-btn-2"> Learn More </button>
+                </a>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
         </Carousel>
 
         <Sec className="sec-two ">
