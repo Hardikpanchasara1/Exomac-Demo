@@ -1,0 +1,40 @@
+.ftr{
+    background-color: #030e22;
+}
+ul li{
+    list-style: none;
+    line-height: 2;
+    color: #748494;
+    cursor: pointer;
+}
+ul li:hover{
+    color: #1292ee ;
+}
+.main-li{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    line-height: 2.5;
+}
+.ftr-li-clr{
+    color: #748494;
+    font-size: 20px;
+    font-weight: 600;
+} 
+.ftrlogo{
+    margin-bottom: 40px;
+}
+.f-pad{
+    padding: 50px 0px;
+    border-bottom: 1px solid #748494;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+.copy{
+    margin: 20px;
+}
