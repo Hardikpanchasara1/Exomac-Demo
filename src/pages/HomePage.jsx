@@ -160,6 +160,56 @@ const HomePage = () => {
             </Row>
           </Container>
         </Sec>
+
+        <Sec className="sec-eight">
+          <Container>
+            <MainTitle
+              secMainTitle1={sec2MainTitle1}
+              secMainTitle2={sec2MainTitle2}
+            />
+            <Row>
+              <Col>
+                <Row className="sec-eight-card p-5 justify-content-center align-items-center">
+                  <Col>
+                    <i class="fa-solid fa-image fs-2"></i>
+                  </Col>
+                  <Col>
+                    <h4 className="sec-eight-card-title">Our Locations</h4>
+                    <span className="sec-eight-card-subtitle" >110 W 34th St, NYC.
+                    <br/>
+                     67 Madison Avenue.</span>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Row className="sec-eight-card p-5 justify-content-center align-items-center">
+                  <Col>
+                    <i class="fa-solid fa-image fs-2"></i>
+                  </Col>
+                  <Col>
+                    <h4 className="sec-eight-card-title">Our Locations</h4>
+                    <span className="sec-eight-card-subtitle" >110 W 34th St, NYC.
+                    <br/>
+                     67 Madison Avenue.</span>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Row className="sec-eight-card p-5 justify-content-center align-items-center">
+                  <Col>
+                    <i class="fa-solid fa-image fs-2"></i>
+                  </Col>
+                  <Col>
+                    <h4 className="sec-eight-card-title">Our Locations</h4>
+                    <span className="sec-eight-card-subtitle" >110 W 34th St, NYC.
+                    <br/>
+                     67 Madison Avenue.</span>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </Sec>
       </HomeDiv>
     </>
   );
@@ -183,8 +233,24 @@ const HomeDiv = styled.div`
     .mt-md {
       @media (max-width: 992px) {
         margin-top: 230px;
-      } 
+      }
     }
+  }
+  .sec-eight-card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .sec-eight-card-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #748494;
+  }
+  .sec-eight-card-subtitle{
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+    color: #748494;
   }
   .slider {
     height: 100vh;
@@ -258,7 +324,7 @@ const HomeDiv = styled.div`
       }
       @media only screen and (max-width: 1999px) and (min-width: 1400px) {
         font-size: 72px;
-    }
+      }
     }
     p {
       font-weight: 600;
@@ -275,7 +341,7 @@ const HomeDiv = styled.div`
       }
       @media only screen and (max-width: 1999px) and (min-width: 1400px) {
         font-size: 20px;
-    }
+      }
     }
     .carosel-btn-1 {
       align-items: center;
