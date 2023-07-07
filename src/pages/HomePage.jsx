@@ -5,6 +5,7 @@ import {
   Container,
   Form,
   InputGroup,
+  Nav,
   Row,
 } from "react-bootstrap";
 import { styled } from "styled-components";
@@ -20,6 +21,9 @@ import Card from "../components/Card";
 import hero1 from "../img/hero-1.jpg";
 import hero2 from "../img/hero-2.jpg";
 import hero3 from "../img/hero-3.jpg";
+import blog1 from "../img/blog-1.jpg";
+import blog2 from "../img/blog-2.jpg";
+import blog3 from "../img/blog-3.jpg";
 
 const HomePage = () => {
   //Main titles start
@@ -178,20 +182,65 @@ const HomePage = () => {
           </Container>
         </Sec>
 
+        <Sec className="sec-six">
+          <Container>
+            <MainTitle
+              secMainTitle1={sec2MainTitle1}
+              secMainTitle2={sec2MainTitle2}
+            />
+            <Row>
+              <Col xs={12} md={6} lg={4} className="mb-4">
+                <div className="">
+                  <div className="thumbnail">
+                    {/* <a> */}
+                      <img src={blog1} alt="blog1" className="img-fluid w-100" />
+                    {/* </a> */}
+                  </div>
+                  <div className="info ">
+                    <ul className="d-flex p-0 m-0 ">
+                      <li className="me-4">
+                        <i className="fa-solid fa-calendar"></i> &nbsp; 10 Oct
+                        2020
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-eye"></i> &nbsp; 70 views
+                      </li>
+                    </ul>
+                    <h3 className="sec-six-heading">
+                      How your sales can work together in account-based
+                      marketing
+                    </h3>
+                    <Nav.Link className="sec-six-link">Read More</Nav.Link>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Sec>
+
         <Sec className="sec-seven">
           <Container>
             <MainTitle
               secMainTitle1={sec7MainTitle1}
               secMainTitle2={sec7MainTitle2}
             />
-            <InputGroup className="mb-3">
-              <Form.Control
-                placeholder="Enter your Email"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <InputGroup.Text id="basic-addon2">Subscribe</InputGroup.Text>
-            </InputGroup>
+            <div className="sec-seven-inp-g mx-auto">
+              <InputGroup className="" size="lg">
+                <Form.Control
+                  placeholder="Enter your email"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                  type="email"
+                  className="sec-seven-input "
+                />
+                <InputGroup.Text
+                  id="basic-addon2"
+                  className="text-bg-primary sec-seven-btn"
+                >
+                  Subscribe
+                </InputGroup.Text>
+              </InputGroup>
+            </div>
           </Container>
         </Sec>
 
@@ -207,7 +256,7 @@ const HomePage = () => {
                   <Col md={12} xl={3}>
                     <i class="fa-solid fa-image fs-1 text-primary"></i>
                   </Col>
-                  <Col xs={8} md={12} xl={9}  className="mt-md-3">
+                  <Col xs={8} md={12} xl={9} className="mt-md-3">
                     <h4 className="sec-eight-card-title">Our Locations</h4>
                     <span className="sec-eight-card-subtitle">
                       110 W 34th St, NYC.
@@ -223,7 +272,7 @@ const HomePage = () => {
                   <Col md={12} xl={3}>
                     <i class="fa-solid fa-image fs-1 text-primary"></i>
                   </Col>
-                  <Col xs={8} md={12} xl={9}  className="mt-md-3">
+                  <Col xs={8} md={12} xl={9} className="mt-md-3">
                     <h4 className="sec-eight-card-title">Our Locations</h4>
                     <span className="sec-eight-card-subtitle">
                       110 W 34th St, NYC.
@@ -239,7 +288,7 @@ const HomePage = () => {
                   <Col md={12} xl={3}>
                     <i class="fa-solid fa-image fs-1 text-primary"></i>
                   </Col>
-                  <Col xs={8} md={12} xl={9}  className="mt-md-3">
+                  <Col xs={8} md={12} xl={9} className="mt-md-3">
                     <h4 className="sec-eight-card-title">Our Locations</h4>
                     <span className="sec-eight-card-subtitle">
                       110 W 34th St, NYC.
@@ -250,7 +299,6 @@ const HomePage = () => {
                   <Col className="extra-col"></Col>
                 </Row>
               </Col>
-              
             </Row>
           </Container>
         </Sec>
@@ -278,6 +326,106 @@ const HomeDiv = styled.div`
       @media (max-width: 992px) {
         margin-top: 230px;
       }
+    }
+  }
+  .sec-six {
+    .info {
+      padding: 30px 0;
+      ul li{
+        font-size: 14px;
+      }
+    }
+    .sec-six-heading {
+      font-size: 26px;
+      padding: 10px 0 20px;
+      margin: 0;
+    }
+    .sec-six-heading:hover {
+      color: #1292ee;
+      cursor: pointer;
+    }
+    .sec-six-link {
+      color: #1292ee;
+    }
+     
+  }
+  .sec-seven {
+    padding: 100px 0;
+    background-color: #748494;
+    background-image: url("../img/newsletter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .heading {
+      color: white;
+    }
+    .sub-hed {
+      color: white;
+    }
+    .sec-seven-inp-g {
+      width: 60%;
+      @media (max-width: 1990px) {
+        width: 45%;
+      }
+      @media (max-width: 1400px) {
+        width: 50%;
+      }
+      @media (max-width: 1200px) {
+        width: 60%;
+      }
+      @media (max-width: 992px) {
+        width: 80%;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .sec-seven-input {
+      color: #748494;
+      font-size: medium;
+      /* border: none; */
+      outline: none !important;
+      border-radius: 5px 0 0 5px;
+      &:focus {
+        outline: none !important;
+      }
+      &::placeholder {
+        color: #748494;
+        font-size: medium;
+      }
+      @media (max-width: 768px) {
+        border-radius: 5px !important;
+        border-width: 1px;
+        margin-bottom: 15px;
+        min-height: 52px;
+        padding: 3px 20px;
+        width: 100%;
+      }
+    }
+    .sec-seven-btn {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 50px;
+      outline: none;
+      border: none;
+      padding: 0 40px;
+      white-space: nowrap;
+      border-radius: 0 5px 5px 0;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        height: 40px;
+        line-height: 35px;
+        padding: 0 20px;
+        border-radius: 5px !important;
+        width: 160px;
+        align-items: center;
+        justify-content: center;
+        line-height: 50px;
+      }
+    }
+    .sec-seven-btn:hover {
+      color: white !important;
+      background: black !important;
     }
   }
   .sec-eight-card {
