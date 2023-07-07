@@ -71,8 +71,8 @@ const Footer = () => {
               </Row>
             </Col>
           </Row>
-          <div className="copy">
-            <p>© 2023 Exomac Made with by HasThemes.</p>
+          <div className="copy py-3">
+            <p className="mb-0">© 2023 <span className="fw-bold">Exomac</span> Made with <i class="fas fa-heart text-danger"></i> by <span className="fw-bold">HasThemes.</span></p>
           </div>
         </Container>
       </div>

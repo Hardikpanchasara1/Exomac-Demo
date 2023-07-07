@@ -1,5 +1,12 @@
 import React from "react";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import {
+  Carousel,
+  Col,
+  Container,
+  Form,
+  InputGroup,
+  Row,
+} from "react-bootstrap";
 import { styled } from "styled-components";
 import ImgHover from "../components/ImgHover";
 import HomePage1 from "../img/home_agency_about_1.jpg";
@@ -15,16 +22,26 @@ import hero2 from "../img/hero-2.jpg";
 import hero3 from "../img/hero-3.jpg";
 
 const HomePage = () => {
+  //Main titles start
+
   const sec2MainTitle1 = "We are a full-service creative agency";
   const sec2MainTitle2 =
     " Our team of designers, developers and creatives are perfectionists who love what they do and love";
   const sec3MainTitle1 = "We create a unique action plan for brands";
   const sec3MainTitle2 =
     "Get your company heading in the right direction with our digital marketing strategist ";
+  const sec7MainTitle1 = "Let’s find out how to work together";
+  const sec7MainTitle2 =
+    "Ready to start your project? The contact information collected through this form will only be used to send a response to your inquiry.";
+
+  //Main titles end
+
+  //subtitles start
   const sec2title1 = "Every day brings new challenges";
   const sec2title2 = "Creative agency focused on vision, product and people";
   const sec4title1 = "Your success is our success";
   const sec4title2 = "Web design, marketing & SEO solutions that get results";
+  //subtitles end
   return (
     <>
       <HomeDiv className="m-0">
@@ -161,52 +178,79 @@ const HomePage = () => {
           </Container>
         </Sec>
 
-        <Sec className="sec-eight">
+        <Sec className="sec-seven">
+          <Container>
+            <MainTitle
+              secMainTitle1={sec7MainTitle1}
+              secMainTitle2={sec7MainTitle2}
+            />
+            <InputGroup className="mb-3">
+              <Form.Control
+                placeholder="Enter your Email"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <InputGroup.Text id="basic-addon2">Subscribe</InputGroup.Text>
+            </InputGroup>
+          </Container>
+        </Sec>
+
+        <Sec className="sec-eight py-5 my-5">
           <Container>
             <MainTitle
               secMainTitle1={sec2MainTitle1}
               secMainTitle2={sec2MainTitle2}
             />
             <Row>
-              <Col>
-                <Row className="sec-eight-card p-5 justify-content-center align-items-center">
-                  <Col>
-                    <i class="fa-solid fa-image fs-2"></i>
+              <Col xs={12} md={6} lg={4} className="mb-4">
+                <Row className="sec-eight-card py-5 px-4 me-4 mx-4 justify-content-center align-items-center">
+                  <Col md={12} xl={3}>
+                    <i class="fa-solid fa-image fs-1 text-primary"></i>
                   </Col>
-                  <Col>
+                  <Col xs={8} md={12} xl={9}  className="mt-md-3">
                     <h4 className="sec-eight-card-title">Our Locations</h4>
-                    <span className="sec-eight-card-subtitle" >110 W 34th St, NYC.
-                    <br/>
-                     67 Madison Avenue.</span>
+                    <span className="sec-eight-card-subtitle">
+                      110 W 34th St, NYC.
+                      <br />
+                      67 Madison Avenue.
+                    </span>
                   </Col>
+                  <Col className="extra-col"></Col>
                 </Row>
               </Col>
-              <Col>
-                <Row className="sec-eight-card p-5 justify-content-center align-items-center">
-                  <Col>
-                    <i class="fa-solid fa-image fs-2"></i>
+              <Col xs={12} md={6} lg={4} className="mb-4">
+                <Row className="sec-eight-card py-5 px-4 me-4 mx-4 justify-content-center align-items-center">
+                  <Col md={12} xl={3}>
+                    <i class="fa-solid fa-image fs-1 text-primary"></i>
                   </Col>
-                  <Col>
+                  <Col xs={8} md={12} xl={9}  className="mt-md-3">
                     <h4 className="sec-eight-card-title">Our Locations</h4>
-                    <span className="sec-eight-card-subtitle" >110 W 34th St, NYC.
-                    <br/>
-                     67 Madison Avenue.</span>
+                    <span className="sec-eight-card-subtitle">
+                      110 W 34th St, NYC.
+                      <br />
+                      67 Madison Avenue.
+                    </span>
                   </Col>
+                  <Col className="extra-col"></Col>
                 </Row>
               </Col>
-              <Col>
-                <Row className="sec-eight-card p-5 justify-content-center align-items-center">
-                  <Col>
-                    <i class="fa-solid fa-image fs-2"></i>
+              <Col xs={12} md={6} lg={4} className="mb-4">
+                <Row className="sec-eight-card py-5 px-4 me-4 mx-4 justify-content-center align-items-center">
+                  <Col md={12} xl={3}>
+                    <i class="fa-solid fa-image fs-1 text-primary"></i>
                   </Col>
-                  <Col>
+                  <Col xs={8} md={12} xl={9}  className="mt-md-3">
                     <h4 className="sec-eight-card-title">Our Locations</h4>
-                    <span className="sec-eight-card-subtitle" >110 W 34th St, NYC.
-                    <br/>
-                     67 Madison Avenue.</span>
+                    <span className="sec-eight-card-subtitle">
+                      110 W 34th St, NYC.
+                      <br />
+                      67 Madison Avenue.
+                    </span>
                   </Col>
+                  <Col className="extra-col"></Col>
                 </Row>
               </Col>
+              
             </Row>
           </Container>
         </Sec>
@@ -236,17 +280,23 @@ const HomeDiv = styled.div`
       }
     }
   }
-  .sec-eight-card{
+  .sec-eight-card {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    .extra-col {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
   }
-  .sec-eight-card-title{
+  .sec-eight-card-title {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1;
     margin-bottom: 15px;
-    color: #748494;
+    color: #030f27;
   }
-  .sec-eight-card-subtitle{
+  .sec-eight-card-subtitle {
     display: block;
     font-size: 16px;
     line-height: 27px;
@@ -298,16 +348,6 @@ const HomeDiv = styled.div`
       left: 0%;
       transform: translate(31%, -50%);
     }
-    /* @media (max-width: 1400px) {
-      top: 50%;
-      left: 0%;
-      transform: translate(21%, -50%);
-    }
-    @media (max-width: 1600px) {
-      top: 50%;
-      left: 0%;
-      transform: translate(21%, -50%);
-    } */
 
     h2 {
       color: white;
