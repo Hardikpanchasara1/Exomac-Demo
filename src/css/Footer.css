@@ -25,7 +25,7 @@ ul li:hover{
     margin-bottom: 40px;
 }
 .f-pad{
-    padding: 50px 0px;
+    padding: 100px 0px;
     border-bottom: 1px solid #748494;
 }
 .copy{
@@ -33,8 +33,5 @@ ul li:hover{
     justify-content: center;
     align-items: center;
     color: white;
-    font-weight: 600;
-}
-.copy{
-    margin: 20px;
+    font-size: 14px;
 }

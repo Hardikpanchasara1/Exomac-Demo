@@ -42,17 +42,17 @@ const Header = () => {
           <Navbar.Brand href="#home"><img src={logoImg} /></Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto list">
-          <Nav.Link href="#home">HomePage</Nav.Link>
+          <Nav.Link href="#home">HomePage <i class="fa-solid fa-angle-down fs-10 "></i> </Nav.Link>
           <Nav.Link href="#home">About Us</Nav.Link>
           <Nav.Link href="#home">Services</Nav.Link>
-          <Nav.Link href="#home">Work</Nav.Link>
-          <Nav.Link href="#home">Blog</Nav.Link>
+          <Nav.Link href="#home">Work <i class="fa-solid fa-angle-down fs-10"></i> </Nav.Link>
+          <Nav.Link href="#home">Blog <i class="fa-solid fa-angle-down fs-10"></i> </Nav.Link>
           <Nav.Link href="#home">Contact Us</Nav.Link>
           <Nav.Link href="#home"><i class="fa-solid fa-magnifying-glass"></i></Nav.Link>
           </Nav>
           </Navbar.Collapse>
-          <button className="nav-btn">Buy Now</button>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggle bg-white"  />
+          <button className="nav-btn ms-auto me-2">Buy Now</button>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggle shadow-none ms-auto ms-sm-1" ><i class="fa-solid fa-bars text-white "></i></Navbar.Toggle>
         </Container>
       </Navbar>
     </>
